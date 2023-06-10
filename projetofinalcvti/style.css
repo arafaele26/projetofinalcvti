@@ -296,38 +296,138 @@ main {
     cursor: grab;
 }
 
-/*
-.google-map::after {
-    content: "";
-    position: absolute;
-    width: var(--circle-diameter);
-    height: var(--circle-diameter);
-    border-radius: var(--circle-diameter);
-    background: radial-gradient(circle, #ffffff00 0%, #f8f9fa 50%);
-    pointer-events: none;
-}
-*/
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&display=swap");
 
-.google-map .map-frame {
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--light-theme);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Big Shoulders Display", cursive;
+  height: 100px;
 }
 
-.google-map iframe {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: visibleStroke;
+.banner {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.banner video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+}
 
-/* ------------------ */
-/* Interactive Effect */
-/* ------------------ */
+.banner .content {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
 
-.google-map:hover {
-    width: 100vw;
-    height: 100vh;
-    border-radius: 0;
+.banner .content h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 5.5em;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.banner .content p {
+  font-size: 1.5em;
+  color: #ffff;
+}
+
+.banner .content img {
+  width: 40px;
+  height: 40px;
+}
+/*letra*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #151320;
+}
+section {
+  height: 100vh;
+  display: flex;
+  padding: 0 4em;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.container {
+  perspective: 1000px;
+  height: 28vh;
+  width: 100%;
+  cursor: pointer;
+}
+.card {
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+}
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.4em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  backface-visibility: hidden;
+}
+.front {
+  background: linear-gradient(to right, #006589, #13348a);
+}
+.front img {
+  width: 5em;
+}
+.content {
+  transform: translateZ(60px);
+}
+.content h3 {
+  font-size: 22px;
+  margin-top: 1em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.content p {
+  font-size: 14px;
+  line-height: 2em;
+  letter-spacing: 0.02em;
+  padding: 0 3em;
+}
+.back {
+  background-color: #28253a;
+  transform: rotateX(180deg);
+}
+.container:hover .card {
+  transform: rotateX(180deg);
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 0 1em;
+  }
+  .container {
+    flex-basis: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1.5em;
+  }
 }
