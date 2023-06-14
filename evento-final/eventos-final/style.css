@@ -2,29 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Ubuntu:ital,wght@1,500&display=swap');
 
 
-
-
-.altura {
-  height: 135px;
-}
-
-.submenu {
-   padding:  0px;
-   margin:  0px;
-   background-color: black;
-   text-align: center;
-   font-family: 'Open Sans', sans-serif; /*trocar pra do josue*/
-
-}
-
-.seccao{
-  display: inline;
-  padding: 15px;
-  color:  black; 
-  text-decoration: none;
-}
-
-
 .navbar-light .navbar-brand {
   color: #fff;
   font-size: 25px;
@@ -182,14 +159,6 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 
 }
 
-/*               OPACIDADE BUTTON
-.btn {
-  #{$prefix}btn-opacity:#{$btn-opacity};
-  opacity: 0.7;
-}
-*/
-
-
 .dots span
 {
     width: 5px;
@@ -253,7 +222,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 /* ------------- */
 
 
-/*Conteúdo Principal*/
+/*Conteúdo Principal - Eventos*/
   .btn-warning
 {
   width: 350px;
@@ -278,6 +247,26 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 
 }
 
+.altura {
+  height: 135px;
+}
+
+.submenu {
+   padding:  0px;
+   margin:  0px;
+   background-color: black;
+   text-align: center;
+   font-family: 'Open Sans', sans-serif; /*trocar pra do josue*/
+}
+
+.seccao{
+  display: inline;
+  padding: 15px;
+  color:  black; 
+  text-decoration: none;
+}
+
+/* ------------- */
 
 
 /*Rodapé*/
