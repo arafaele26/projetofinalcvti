@@ -2,7 +2,7 @@
   height: 135px;
 }
 
-.banner {
+.banner2 {
   text-align: center;
   padding: 20px;
   width: 100%;
@@ -10,8 +10,6 @@
 }
 .banner h1 {
   font-size: 75px;
-  font-family: 'Ubuntu', sans-serif;
-
 }
 
 .carousel-item {
@@ -476,7 +474,7 @@ p.credits {
 }
 p a {
 	font-weight: bolder;
-	color: #000;
+	color: red;
 	text-decoration: none;
 }
 @supports (font-variant-caps: small-caps) {
